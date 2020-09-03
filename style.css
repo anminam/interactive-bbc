@@ -33,6 +33,7 @@ img {
 }
 
 .scroll-graphic {
+  overflow-x: hidden;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -49,6 +50,7 @@ img {
   height: 100%;
   opacity: 0;
   transition: 0.5s;
+  will-change: opacity;
 }
 .visible {
   opacity: 1;
@@ -59,6 +61,7 @@ img {
 
 .scroll-text {
   position: relative;
+  padding-bottom: 1px;
 }
 
 .step {
@@ -67,4 +70,16 @@ img {
   border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 3px;
   background: rgba(255, 255, 255, 0.8);
+}
+
+.bird {
+  position: absolute;
+  left: 0;
+  bottom: 70%;
+  width: 100px;
+  transition: 1.5s 0.5s linear;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
