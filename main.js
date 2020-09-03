@@ -14,14 +14,14 @@
     birdFiles2(isKey) {
       if (isKey) {
         document.querySelector(
-          '[data-index="2"] .bird'
+          '[data-index="3"] .bird'
         ).style.transform = `translate(${window.innerWidth}px, ${
           -window.innerHeight * 0.7
         }px)`;
       } else {
         document.querySelector(
-          '[data-index="2"] .bird'
-        ).style.transform = `translateX(-100%)`;
+          '[data-index="3"] .bird'
+        ).style.transform = `translate(-100%, ${window.innerHeight}px)`
       }
     },
   };
@@ -32,7 +32,6 @@
 
   const io = new IntersectionObserver((entries, observer) => {
     ioIndex = entries[0].target.dataset.index;
-    console.log(ioIndex, ioIndex * 1);
   });
 
   stepEls.forEach((el, i) => {
