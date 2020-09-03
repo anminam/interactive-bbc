@@ -44,6 +44,10 @@ img {
     height: 100%;
 }
 
+.scene-img {
+    max-height: 100vh;
+}
+
 .scroll-text {
     position: relative;
 }
