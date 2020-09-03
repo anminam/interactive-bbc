@@ -11,18 +11,27 @@
 
 <body>
     <header class="header">
+        <nav>
+            <span>NEWS</span>
+            <span>ANMINAM</span>
+        </nav>
         <div class="global-width">
             <h1>코로나19 시대, 은평구 사는 개발자의 하루.</h1>
+            <div class="post-info">
+                <span class="post-info__writer">Anminam 비주얼저널리즘 팀</span>
+                <span class="post-info__date">2020년 9월 4일</span>
+                <span class="post-info__topic">코로나바이러스</span>
+            </div>
             <p>
                 이 페이지는 BBC 비주얼저널리즘 팀에서 제작한 <a
                     href="https://www.bbc.com/korean/resources/idt-48d3c9a7-4063-4289-9726-611b5ea9d7b5">'재택근무의 일상화'...
                     코로나19가 바꿀 사무실의 미래</a> 페이지를 비슷하게 구현한 1분코딩에서 제작한 <a href="https://studiomeal.com/archives/1203">BBC
                     인터랙티브 페이지 “코로나19가 바꿀 사무실의 미래” 클론</a> 페이지를 비슷하게 구현해 본 개발 예제입니다.
-                시각적 기능만 비슷하게 만들어 봤을뿐만아니라 1분이베프님께서 직접하셔서 완벽할 것으로 예상합니다.<br />
+                시각적 기능만 비슷하게 만들어 봤을뿐만아니라 1분이베프님께서 직접하셔서 완벽할 것으로 예상합니다.<br /><br />
                 아래의 내용은 서울시 은평구에사는 개발자인 저의 실제 일상이며 그냥 따라 만든 페이지가 아니므로 제 안의 큰 의미를 봐주십사...합니다.<br />
                 제작 방법에 대한 강의는 '일분코딩'에서 제작한 <a
                     href="https://www.inflearn.com/course/bbc-%EC%9D%B8%ED%84%B0%EB%9E%99%ED%8B%B0%EB%B8%8C%EC%9B%B9-%ED%81%B4%EB%A1%A0">링크</a>에서
-                확인할 수 있습니다.<br />
+                확인할 수 있습니다.<br /><br />
                 밑으로 스크롤 해봅시다.<br />
                 (IntersectionObserver, position sticky 등의 따끈따끈한 기술들을 사용해서, 동작하지 않을경우 그건 버그가아닌 기능입니다.)
             </p>
@@ -37,12 +46,12 @@
                 <img src="./images/notjungsin.png" alt="안미남 그림 초상화" class="scene-img">
                 <img src="images/bird.gif" alt="날개움직이는 나는 새" class="bird">
             </div>
-            <div class="graphic-item" data-action="birdFiles2">
-                <img src="./images/thenaver.jpg" alt="코니와 훈미니" class="scene-img">
-                <img src="images/bird.gif" alt="날개움직이는 나는 새" class="bird">
-            </div>
             <div class="graphic-item">
+                <img src="./images/thenaver.jpg" alt="코니와 훈미니" class="scene-img">
+            </div>
+            <div class="graphic-item" data-action="birdFiles2">
                 <img src="./images/beyond01.jpg" alt="부장님" class="scene-img">
+                <img src="images/bird.gif" alt="날개움직이는 나는 새" class="bird">
             </div>
             <div class="graphic-item">
                 <img src="./images/whoisanminam.png" alt="안미남과 똑같은사람사진과 안미남" class="scene-img">
@@ -66,7 +75,7 @@
         </div>
         <div class="scroll-text global-width">
             <div class="step">
-                안미남을 소개한다.
+                <p>안미남을 소개한다.</p>
                 <p>안미남은 나 자신이며, 은평구에서도 변두리에 사는 개발자인 안미남은 코로나19 이전부터 재택근무를 하고싶었지만, 직장상사는 눈앞에서 일안하는 꼴을 못본다.</p>
             </div>
             <div class="step">
@@ -109,6 +118,10 @@
         <p>오늘보다 좋은내일이 되기위해 로또를 사자</p>
 
     </section>
+    <footer>
+        Anminam in the house.
+
+    </footer>
 
     <script src="./main.js"></script>
 </body>

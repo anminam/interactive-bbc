@@ -15,6 +15,7 @@ p,
 h1,
 h2 {
   box-sizing: border-box;
+      color: #404040;
 }
 
 a {
@@ -68,7 +69,7 @@ img {
   margin-bottom: 60vh;
   padding: 0.5em 1em;
   border-radius: 1em;
-  box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 3px;
+  box-shadow: 0 0 3px 0 #bababa;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -82,4 +83,50 @@ img {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+header {
+
+}
+header p {
+  font-weight: bold;
+  color: #404040;
+  line-height: 1.5;
+}
+.post-info {
+  display: flex;
+  font-size: 0.8rem;
+  margin: 2em 0;
+  font-weight: bold;
+}
+.post-info > span {
+  margin-right: 1em;
+}
+.post-info__writer {
+}
+.post-info__date {
+}
+.post-info__topic {
+  color: #bb1919;
+}
+
+nav {
+  display: flex;
+  background-color: #bb1919;
+  color: white;
+  padding: 0.5em 0;
+}
+
+nav > span {
+  padding: 0em 1em;
+}
+
+nav > span + span {
+  border-left: 1px solid white
+}
+
+footer {
+  background-color: #4c4c4c;
+  color: #fff;
+  padding: 2em;
 }
